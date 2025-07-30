@@ -1,0 +1,8 @@
+This repo contains the python scripts used to perform a battery analysis using a Raspberry Pi 4 Model B.
+
+    - calibrate.py  :   Raspberry Pi, collects sampples for calibrating voltage readings for the ADS1115 device.
+    - client.py     :   Raspberry Pi, Reads voltage and current values read by the ADS1115 device. Must run in parallel
+                        with server.py.
+    - sensor.py     :   Raspberry Pi, basic example file for testing the ADS1115 device.
+    - server.py     :   Windows, communicates with the CrazyFlie via radio, must run in parallel with client.py.
+    - vCalib.py     :   Raspberry Pi, a secondary calibration file that averages 1000 samples using the ADS1115 device.
